@@ -4,15 +4,15 @@
     <body>
         <%- include('../includes/navigation.ejs') %>
         <main>
-            <h1><%= product.title%></h1>
+            <h1><%= product.title %></h1>
             <hr>
             <div>
-                <img scr="<%= product.imageUrl %>" alt="<%= product.title%>">
+                <img scr="<%= product.imageUrl %>" alt="<%= product.title %>">
             </div>
-            <h2><%= product.price</h2>
-            <p><%= product.description%></p>
-            <form action="/cart" method="post">
-                <button class="btn" type=""submit>Add to Cart</button>
+            <h2><%= product.price %></h2>
+            <p><%= product.description %></p>
+            <form action="/cart" method="POST">
+                <button class="btn" type="submit">Add to Cart</button>
             </form>
         </main>
-        <%- include('../includes/end.ejs') %>h
+        <%- include('../includes/end.ejs') %>
